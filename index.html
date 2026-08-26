@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Student Horizons</title>
+<meta name="description" content="Supporting Students With Navigating New Beginnings">
+<link rel="canonical" href="https://www.studenthorizons.org/">
+<link rel="icon" href="/favicon.svg?v=10" type="image/svg+xml">
+<link rel="icon" href="/assets/img/icon-192.png?v=10" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=10">
+<meta name="theme-color" content="#000000">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Student Horizons">
+<meta property="og:title" content="Student Horizons">
+<meta property="og:description" content="Supporting Students With Navigating New Beginnings">
+<meta property="og:url" content="https://www.studenthorizons.org/">
+<meta property="og:image" content="https://www.studenthorizons.org/assets/img/og-card-dark.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Student Horizons">
+<meta name="twitter:image" content="https://www.studenthorizons.org/assets/img/og-card-dark.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Student Horizons">
+<meta name="twitter:description" content="Supporting Students With Navigating New Beginnings">
+
+<!-- Dark on every load. The toggle is session-only by design: nothing is
+     persisted, so a reload or a fresh visit always comes back dark. In-page
+     section links do not reload, so a chosen theme survives navigating the
+     page. -->
+
+<link rel="preload" href="/assets/fonts/dm-sans-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/libre-baskerville-700-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
+<!-- ?v= is a cache buster, and it is load-bearing. GitHub Pages serves assets
+     with a short max-age, but a browser that already holds styles.css will keep
+     serving it from disk across reloads, so a deploy can land on one device and
+     not another — which is exactly how a desktop ends up showing older
+     behaviour than a phone that fetched the file fresh. BUMP THIS ON EVERY
+     STYLESHEET CHANGE. Same for the icons below; favicons are cached hardest
+     of all. -->
+<link rel="stylesheet" href="/assets/css/styles.css?v=10">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NGO",
+  "name": "Student Horizons",
+  "url": "https://www.studenthorizons.org/",
+  "logo": "https://www.studenthorizons.org/assets/img/combomark-dark.svg",
+  "slogan": "Every horizon has a guide",
+  "description": "Supporting Students With Navigating New Beginnings",
+  "email": "studenthorizons.org@gmail.com",
+  "areaServed": "Northeastern University, Boston, Massachusetts",
+  "sameAs": [
+    "https://www.linkedin.com/company/student-horizons-org/",
+    "https://www.instagram.com/student.horizons",
+    "https://linktr.ee/studenthorizons.org"
+  ]
+}
+</script>
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="cursor-ring" aria-hidden="true"></div>
+<div class="cursor-dot" aria-hidden="true"></div>
+
+<header class="masthead">
+  <div class="shell masthead-in">
+    <a class="brand" href="#home" aria-label="Student Horizons — top of page">
+      <img class="on-dark"  src="/assets/img/wordmark-light.svg" alt="Student Horizons" width="360" height="35">
+      <img class="on-light" src="/assets/img/wordmark-dark.svg"  alt="Student Horizons" width="360" height="35">
+    </a>
+
+    <nav class="nav" aria-label="Main">
+      <a href="#do">What We Do</a>
+      <a href="#role">The Role</a>
+      <a href="#join">How to Join</a>
+      <a href="#why">Why Ambassadors Join</a>
+      <a href="#contact">Contact Us</a>
+    </nav>
+
+    <a class="btn btn-nav" href="https://forms.gle/mtEmmoPCQnDrMjLR6" target="_blank" rel="noopener">Join</a>
+
+    <button class="theme-btn" type="button" aria-label="Switch to light theme" title="Switch theme">
+      <svg viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+        <path class="tb-sun" d="M6 20 A 14 14 0 0 1 34 20" fill="none" stroke-width="3" stroke-linecap="round"/>
+        <path class="tb-line" d="M3 20 H37" fill="none" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+    </button>
+
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-nav">
+      <span class="menu-bars" aria-hidden="true"></span>
+      <span class="sr-only">Menu</span>
+    </button>
+  </div>
+
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Main, mobile" inert>
+    <a href="#do">What We Do</a>
+    <a href="#role">The Role</a>
+    <a href="#join">How to Join</a>
+    <a href="#why">Why Ambassadors Join</a>
+    <a href="#contact">Contact Us</a>
+    <a href="https://forms.gle/mtEmmoPCQnDrMjLR6" target="_blank" rel="noopener">Apply to be an Ambassador</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ═══════════════════════════ hero ═══════════════════════════ -->
+  <section class="panel hero" id="home">
+    <div class="shell">
+      <p class="tagline reveal">Northeastern University · Founding Cohort</p>
+      <h1 class="reveal d1">Every <em>horizon</em><br class="m-br"> has a <em>guide</em>.</h1>
+
+      <div class="hero-grid">
+        <p class="blurb reveal d2">Settling into university life means learning a hundred different things, amongst people you don't know, in an environment you're unfamiliar with. You deserve to feel right at home the moment you step foot on campus — with the help of our Student Ambassadors.</p>
+
+        <div class="hero-side reveal d3">
+          <a class="btn btn-wide" href="https://forms.gle/mtEmmoPCQnDrMjLR6" target="_blank" rel="noopener">Become an Ambassador</a>
+          <ul class="socials" role="list">
+            <li><a href="https://www.instagram.com/student.horizons" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle class="fill" cx="17.2" cy="6.8" r="1.2"/></svg>
+              <span>Instagram</span></a></li>
+            <li><a href="https://www.linkedin.com/company/student-horizons-org/" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M7.4 10.4v6.2M7.4 7.6v.1M11.4 16.6v-6.2M11.4 13c0-1.5.9-2.6 2.4-2.6s2.3 1 2.3 2.6v3.6"/></svg>
+              <span>LinkedIn</span></a></li>
+            <li><a href="https://linktr.ee/studenthorizons.org" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 4v7M12 21v-4M12 11 7.2 6.6M12 11l4.8-4.4M5 13h14"/></svg>
+              <span>Linktree</span></a></li>
+            <li><a href="mailto:studenthorizons.org@gmail.com">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.6 6.4 8.4 6.4 8.4-6.4"/></svg>
+              <span>Gmail</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═════════════════════════ what we do ═══════════════════════ -->
+  <section class="panel" id="do">
+    <div class="shell">
+      <p class="label reveal">What We Do</p>
+      <div class="split">
+        <h2 class="reveal d1">We turn <em>new</em><br class="d-br"> into <em>known</em>.</h2>
+        <p class="body-lg reveal d2">Universities already have an abundance of offices and services for incoming students to assimilate to campus life. However, too few students understand how to navigate those systems, and perhaps more importantly, those systems do not in and of themselves create communities. Student Horizons connects students to the resources they need, while building the communities they want. Student Horizons is currently actively recruiting Student Ambassadors for Northeastern University, and is seeking expansion opportunities to alternative universities as well.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ the role ═══════════════════════ -->
+  <section class="panel" id="role">
+    <div class="shell">
+      <p class="label reveal">The Role</p>
+      <h2 class="reveal d1">What a Student<br class="m-br"> Ambassador <em>does</em>.</h2>
+
+      <div class="duo reveal d2">
+        <article class="flip" tabindex="0" role="button" aria-pressed="false" aria-label="Show the second part of the role">
+          <div class="face face-a">
+            <h3>Meet Students Where They're At</h3>
+            <p class="two-42">Answering their questions in the greatest capacity possible. <br>What they need to buy, where they need to go, and who they need to meet, in order to maximize their success on campus.</p>
+          </div>
+          <div class="face face-b">
+            <h3>Reach Out First</h3>
+            <p class="two">Most people who need help hesitate to send the first message. <br>Be proactive, reach out, and build a bond that'll last across semesters.</p>
+          </div>
+          <span class="flip-hint" aria-hidden="true">Click</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ how to join ════════════════════ -->
+  <section class="panel" id="join">
+    <div class="shell">
+      <p class="label reveal">How to Join</p>
+      <h2 class="reveal d1"><em>Five</em> Steps to Join.</h2>
+      <p class="lede reveal d2">Applications are ongoing, year-round.</p>
+
+      <div class="carousel reveal d3" aria-roledescription="carousel" aria-label="The five steps to join">
+        <div class="car-view">
+          <ul class="car-track" role="list">
+            <li class="car-card" role="group" aria-roledescription="slide" aria-label="Step 1 of 5">
+              <span class="car-n" aria-hidden="true">1</span>
+              <h3>Fill out the interest form</h3>
+              <p>Basic information about you.<br class="m-br"> No more than 2 minutes to finish.</p>
+            </li>
+            <li class="car-card" role="group" aria-roledescription="slide" aria-label="Step 2 of 5">
+              <span class="car-n" aria-hidden="true">2</span>
+              <h3>Join the weekly newsletter</h3>
+              <p class="two">You're automatically added upon finishing the interest form, <br>so you're always up to date on all things Student Horizons.</p>
+            </li>
+            <li class="car-card" role="group" aria-roledescription="slide" aria-label="Step 3 of 5">
+              <span class="car-n" aria-hidden="true">3</span>
+              <h3>Meet with a co-founder</h3>
+              <p>What you're looking for, what the role actually asks of you, and whether there's a fit.</p>
+            </li>
+            <li class="car-card" role="group" aria-roledescription="slide" aria-label="Step 4 of 5">
+              <span class="car-n" aria-hidden="true">4</span>
+              <h3>Work through onboarding</h3>
+              <p class="two">Understanding, in-depth, who we are and how we operate, <br>and how your role will embed within our organization.</p>
+            </li>
+            <li class="car-card" role="group" aria-roledescription="slide" aria-label="Step 5 of 5">
+              <span class="car-n" aria-hidden="true">5</span>
+              <h3>Join the program</h3>
+              <p class="two">Congratulations! You're a Student Ambassador for Student Horizons. <br>You'll be connected to your students to begin supporting them.</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="car-ui">
+          <div class="car-dots" role="tablist" aria-label="Choose a step"></div>
+          <div class="car-arrows">
+            <button class="car-nav" type="button" data-dir="-1" aria-label="Previous step">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4 7 12l8 8"/></svg>
+            </button>
+            <button class="car-nav" type="button" data-dir="1" aria-label="Next step">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4l8 8-8 8"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ why ambassadors join ═══════════════ -->
+  <section class="panel" id="why">
+    <div class="shell">
+      <p class="label reveal">Why Ambassadors Join</p>
+      <h2 class="reveal d1">The case for joining <em>now</em>.</h2>
+
+      <div class="duo reveal d2">
+        <article class="flip" tabindex="0" role="button" aria-pressed="false" aria-label="Show the second reason ambassadors join">
+          <div class="face face-a">
+            <h3>You build with us</h3>
+            <p>Student Horizons is still quite early. Help build the future of our organization by getting involved in additional roles outside of being a Student Ambassador.</p>
+          </div>
+          <div class="face face-b">
+            <h3>Certified volunteer hours</h3>
+            <p class="two">Official, accredited volunteer hours for the time you contribute, <br>logged and ready whenever you need them documented.</p>
+          </div>
+          <span class="flip-hint" aria-hidden="true">Click</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ cta ════════════════════════════ -->
+  <section class="panel cta">
+    <div class="shell cta-in">
+      <h2 class="reveal">Applications are ongoing, <em>year-round</em>.</h2>
+      <!-- The reveal lives on a wrapper, never on the control itself: the
+           reveal rules replace the element's whole `transition`, which silently
+           stripped this button's ink timing and made it flip colour instantly. -->
+      <span class="reveal d1 rise"><a class="btn btn-lg" href="https://forms.gle/mtEmmoPCQnDrMjLR6" target="_blank" rel="noopener">Become an Ambassador</a></span>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ contact ════════════════════════ -->
+  <section class="panel" id="contact">
+    <div class="shell">
+      <p class="label reveal">Contact Us</p>
+      <div class="split split-even">
+        <div>
+          <h2 class="reveal d1">Say <em>hello</em>.</h2>
+          <p class="body-sm two reveal d2">Questions about the role, the organization, or working together. <br>We read everything that comes in.</p>
+
+          <ul class="socials socials-wide reveal d3" role="list">
+            <li><a href="https://www.instagram.com/student.horizons" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle class="fill" cx="17.2" cy="6.8" r="1.2"/></svg>
+              <span>Instagram</span></a></li>
+            <li><a href="https://www.linkedin.com/company/student-horizons-org/" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M7.4 10.4v6.2M7.4 7.6v.1M11.4 16.6v-6.2M11.4 13c0-1.5.9-2.6 2.4-2.6s2.3 1 2.3 2.6v3.6"/></svg>
+              <span>LinkedIn</span></a></li>
+            <li><a href="https://linktr.ee/studenthorizons.org" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 4v7M12 21v-4M12 11 7.2 6.6M12 11l4.8-4.4M5 13h14"/></svg>
+              <span>Linktree</span></a></li>
+            <li><a href="mailto:studenthorizons.org@gmail.com">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.6 6.4 8.4 6.4 8.4-6.4"/></svg>
+              <span>Gmail</span></a></li>
+          </ul>
+        </div>
+
+        <div class="form-zone reveal d2" data-state="form">
+          <form class="form" id="contact-form" novalidate>
+            <p class="hp"><label>Leave this field empty<input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></p>
+            <p class="field"><label for="cf-name">Name</label>
+              <input id="cf-name" name="name" type="text" autocomplete="name" required></p>
+            <p class="field"><label for="cf-email">Email</label>
+              <input id="cf-email" name="email" type="email" autocomplete="email" required></p>
+            <p class="field"><label for="cf-topic">Subject</label>
+              <select id="cf-topic" name="topic">
+                <option>Becoming an Ambassador</option>
+                <option>Getting support as a student</option>
+                <option>Partnership or press</option>
+                <option>Something else</option>
+              </select></p>
+            <p class="field"><label for="cf-msg">Message</label>
+              <textarea id="cf-msg" name="message" rows="4" required></textarea></p>
+            <button class="btn" type="submit">Send Message</button>
+            <p class="form-error" role="alert" hidden></p>
+          </form>
+
+          <div class="form-load" aria-hidden="true">
+            <svg class="spinner" viewBox="0 0 50 50"><circle cx="25" cy="25" r="20" fill="none" stroke-width="3.5"/></svg>
+          </div>
+
+          <div class="form-done" role="status">
+            <h3>Thanks for reaching us!</h3>
+            <p>Student Horizons will respond to your message in due time.</p>
+            <button class="btn" type="button" id="again">Contact Us Again</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="shell foot-in">
+    <a class="foot-brand" href="#home" aria-label="Student Horizons — back to top">
+      <img class="on-dark"  src="/assets/img/combomark-light.svg" alt="Student Horizons" width="340" height="153">
+      <img class="on-light" src="/assets/img/combomark-dark.svg"  alt="Student Horizons" width="340" height="153">
+    </a>
+    <div class="foot-cols">
+      <div>
+        <h2>Sections</h2>
+        <ul role="list">
+          <li><a href="#do">What We Do</a></li>
+          <li><a href="#role">The Role</a></li>
+          <li><a href="#join">How to Join</a></li>
+          <li><a href="#why">Why Ambassadors Join</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Socials</h2>
+        <ul role="list">
+          <li><a href="https://www.instagram.com/student.horizons" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.linkedin.com/company/student-horizons-org/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://linktr.ee/studenthorizons.org" target="_blank" rel="noopener">Linktree</a></li>
+          <li><a href="mailto:studenthorizons.org@gmail.com">Gmail</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Fill Out the Form</h2>
+        <a class="btn btn-foot" href="https://forms.gle/mtEmmoPCQnDrMjLR6" target="_blank" rel="noopener">Become an Ambassador</a>
+      </div>
+    </div>
+  </div>
+  <div class="foot-legal-band">
+    <div class="shell foot-legal">
+      <p>Student Horizons is an independent nonprofit built by and for students. 501(c)(3) status pending.</p>
+      <p>&copy; <span id="yr">2026</span> Student Horizons</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+var root = document.documentElement;
+var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* ── theme ─────────────────────────────────────────────────────────
+   The arc is the sun. Above the line = light (day), below = night.
+   Each toggle adds another +180deg, so the sweep is always clockwise:
+   light→dark passes down the right side, dark→light continues round
+   the left. Rotation is unbounded on purpose — never reset it.
+   ------------------------------------------------------------------ */
+var tbtn = document.querySelector('.theme-btn');
+var sun = tbtn.querySelector('.tb-sun');
+var turns = root.getAttribute('data-theme') === 'dark' ? 1 : 0;
+
+sun.style.transition = 'none';
+sun.style.transform = 'rotate(' + (turns * 180) + 'deg)';
+requestAnimationFrame(function () { sun.style.transition = ''; });
+
+function paintBtn() {
+  tbtn.setAttribute('aria-label',
+    root.getAttribute('data-theme') === 'dark' ? 'Switch to light theme' : 'Switch to dark theme');
+}
+paintBtn();
+tbtn.addEventListener('click', function () {
+  var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+  root.setAttribute('data-theme', next);
+  turns += 1;
+  sun.style.transform = 'rotate(' + (turns * 180) + 'deg)';
+  paintBtn();
+});
+
+/* ── mobile menu ───────────────────────────────────────────────── */
+var mbtn = document.querySelector('.menu-btn');
+var mob = document.getElementById('mobile-nav');
+/* `hidden` cannot be transitioned, so the drawer is driven by a class and
+   held closed with `inert` for assistive tech instead. The page is no longer
+   scroll-locked while it is open. */
+function setNav(open) {
+  mbtn.setAttribute('aria-expanded', String(open));
+  mob.classList.toggle('open', open);
+  mob.inert = !open;
+}
+mbtn.addEventListener('click', function () {
+  setNav(mbtn.getAttribute('aria-expanded') !== 'true');
+});
+/* The drawer sits inside the sticky masthead, so while it is open it adds its
+   own height to the document flow. A plain anchor jump is resolved at click
+   time — against the OPEN layout — and then the drawer collapses and pulls
+   everything up underneath the scroll, landing ~315px past the section every
+   single time. So: swallow the jump, close the drawer, wait for the layout to
+   settle, and only then scroll. scrollIntoView honours scroll-padding-top, so
+   the section still clears the collapsed masthead. */
+mob.addEventListener('click', function (e) {
+  var a = e.target.closest && e.target.closest('a');
+  if (!a) return;
+  var id = a.getAttribute('href');
+  if (!id || id.charAt(0) !== '#') { setNav(false); return; }
+
+  e.preventDefault();
+  var target = document.querySelector(id);
+  setNav(false);
+  if (!target) return;
+
+  var fired = false;
+  function go() {
+    if (fired) return;
+    fired = true;
+    mob.removeEventListener('transitionend', onEnd);
+    try { history.pushState(null, '', id); } catch (err) {}
+    target.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+  }
+  function onEnd(ev) { if (ev.propertyName === 'max-height') go(); }
+  mob.addEventListener('transitionend', onEnd);
+  /* belt and braces: transitionend does not fire if the drawer was already
+     collapsed, or if the transition is cut short */
+  setTimeout(go, 420);
+});
+
+/* pushState alone would leave the back button changing the hash without
+   moving the page, so the same landing logic is reused for history steps. */
+window.addEventListener('popstate', function () {
+  var t = location.hash && document.querySelector(location.hash);
+  if (t) t.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+});
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape' && mbtn.getAttribute('aria-expanded') === 'true') {
+    setNav(false); mbtn.focus();
+  }
+});
+
+/* ── click cards ───────────────────────────────────────────────── */
+document.querySelectorAll('.flip').forEach(function (el) {
+  function toggle() {
+    var on = el.classList.toggle('flipped');
+    el.setAttribute('aria-pressed', String(on));
+  }
+  el.addEventListener('click', toggle);
+  el.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); }
+  });
+});
+
+/* ── carousel ──────────────────────────────────────────────────────
+   A clone of the last card sits before the first, and a clone of the
+   first sits after the last. Stepping past either end slides onto the
+   clone normally, then jumps to the matching real card with the
+   transition switched off — so 5→1 slides one card left instead of
+   rewinding through the whole track.
+   ------------------------------------------------------------------ */
+(function () {
+  var wrap = document.querySelector('.carousel');
+  if (!wrap) return;
+  var view = wrap.querySelector('.car-view');
+  var track = wrap.querySelector('.car-track');
+  var dots = wrap.querySelector('.car-dots');
+  var reals = [].slice.call(track.children);
+  var N = reals.length;
+
+  var head = reals[N - 1].cloneNode(true);
+  var tail = reals[0].cloneNode(true);
+  [head, tail].forEach(function (c) { c.classList.add('clone'); c.removeAttribute('aria-label'); });
+  track.insertBefore(head, reals[0]);
+  track.appendChild(tail);
+
+  var idx = 1;
+
+  reals.forEach(function (c, n) {
+    var d = document.createElement('button');
+    d.type = 'button'; d.className = 'car-dot';
+    d.setAttribute('role', 'tab');
+    d.setAttribute('aria-label', 'Step ' + (n + 1));
+    d.addEventListener('click', function (ev) { ev.stopPropagation(); idx = n + 1; render(true); });
+    dots.appendChild(d);
+  });
+
+  function render(anim) {
+    if (!anim) track.style.transition = 'none';
+    track.style.transform = 'translateX(' + (-idx * 100) + '%)';
+    if (!anim) { void track.offsetWidth; track.style.transition = ''; }
+
+    var real = ((idx - 1) % N + N) % N;
+    [].slice.call(track.children).forEach(function (c, k) {
+      var on = (k === idx);
+      c.setAttribute('aria-hidden', String(!on));
+      c.inert = !on;
+    });
+    [].slice.call(dots.children).forEach(function (d, k) {
+      d.classList.toggle('on', k === real);
+      d.setAttribute('aria-selected', String(k === real));
+    });
+  }
+
+  function go(dir) { idx += dir; render(true); }
+
+  track.addEventListener('transitionend', function (ev) {
+    if (ev.propertyName !== 'transform' || ev.target !== track) return;
+    if (idx === N + 1) { idx = 1; render(false); }
+    else if (idx === 0) { idx = N; render(false); }
+  });
+
+  /* left half goes back, right half goes forward */
+  view.addEventListener('click', function (ev) {
+    if (ev.target.closest && ev.target.closest('a,button')) return;
+    var r = view.getBoundingClientRect();
+    go(ev.clientX < r.left + r.width / 2 ? -1 : 1);
+  });
+
+  wrap.querySelectorAll('.car-nav').forEach(function (b) {
+    b.addEventListener('click', function () { go(Number(b.dataset.dir)); });
+  });
+  wrap.addEventListener('keydown', function (ev) {
+    if (ev.key === 'ArrowRight') { ev.preventDefault(); go(1); }
+    if (ev.key === 'ArrowLeft') { ev.preventDefault(); go(-1); }
+  });
+
+  var x0 = null;
+  wrap.addEventListener('touchstart', function (ev) { x0 = ev.touches[0].clientX; }, { passive: true });
+  wrap.addEventListener('touchend', function (ev) {
+    if (x0 === null) return;
+    var dx = ev.changedTouches[0].clientX - x0;
+    if (Math.abs(dx) > 40) go(dx < 0 ? 1 : -1);
+    x0 = null;
+  });
+
+  render(false);
+})();
+
+/* ── contact form: posts to FormSubmit, stays on the page ──────── */
+(function () {
+  var zone = document.querySelector('.form-zone');
+  var form = document.getElementById('contact-form');
+  var again = document.getElementById('again');
+  var err = form.querySelector('.form-error');
+  var ENDPOINT = 'https://formsubmit.co/ajax/472aa6e980aa76fe485a71f6145cff68';
+
+  function setState(s) { zone.dataset.state = s; }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    err.hidden = true;
+    if (!form.checkValidity()) { form.reportValidity(); return; }
+
+    var fd = new FormData(form);
+    var payload = {
+      name: fd.get('name'),
+      email: fd.get('email'),
+      topic: fd.get('topic'),
+      message: fd.get('message'),
+      _subject: 'New message from studenthorizons.org',
+      _template: 'table',
+      _captcha: 'false'
+    };
+    if (fd.get('_honey')) { setState('done'); return; }
+
+    setState('loading');
+    var started = Date.now();
+
+    fetch(ENDPOINT, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(payload)
+    })
+      .then(function (r) { return r.json().catch(function () { return {}; }).then(function (j) { return { ok: r.ok, j: j }; }); })
+      .then(function (res) {
+        var wait = Math.max(0, 700 - (Date.now() - started));
+        /* FormSubmit answers 200 with success:"false" while the address is
+           still unactivated, so the body has to be checked, not just status. */
+        var okay = res.ok && String(res.j && res.j.success) !== 'false';
+        setTimeout(function () {
+          if (okay) { form.reset(); setState('done'); }
+          else {
+            setState('form');
+            err.textContent = (res.j && res.j.message) ||
+              'That didn\u2019t send. Please email studenthorizons.org@gmail.com directly.';
+            err.hidden = false;
+          }
+        }, wait);
+      })
+      .catch(function () {
+        setState('form');
+        err.textContent = 'That didn\u2019t send. Please email studenthorizons.org@gmail.com directly.';
+        err.hidden = false;
+      });
+  });
+
+  again.addEventListener('click', function () {
+    setState('loading');
+    setTimeout(function () { setState('form'); document.getElementById('cf-name').focus(); }, 600);
+  });
+})();
+
+/* ── scroll reveal ─────────────────────────────────────────────── */
+if (!reduce) {
+  document.body.classList.add('anim');
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (en) {
+      if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+    });
+  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
+  document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+}
+
+/* end of the main script — the cursor lives in its own tag below, so a
+   throw anywhere above cannot take it with it. */
+</script>
+
+<script>
+/* ── custom cursor ─────────────────────────────────────────────────────
+   Deliberately isolated in its own <script> and its own IIFE. Two earlier
+   attempts at this "went missing" in the field while testing clean in the
+   lab, and both failure modes are structural rather than cosmetic:
+
+     1. It sat at the bottom of the one big script. Any throw earlier in
+        that script — a selector that went stale after a markup edit, say —
+        silently killed everything after it, the cursor included.
+     2. It was gated on `(hover: hover) and (pointer: fine)`. Those query
+        the PRIMARY pointer. On a touchscreen laptop the primary pointer
+        reports coarse even though a trackpad is right there, so the whole
+        block was skipped on exactly the machines most likely to be used.
+
+   The gate is now the mouse itself: the first real mousemove turns it on.
+   Nothing else can decide it should not run. Touch devices never fire a
+   qualifying mousemove, so they still never see it.
+   ------------------------------------------------------------------ */
+(function () {
+  try {
+    var dot = document.querySelector('.cursor-dot');
+    var ring = document.querySelector('.cursor-ring');
+    if (!dot || !ring) return;
+
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    /* Reduced motion removes the trail, not the cursor. */
+    var LERP = reduce ? 1 : 0.55;
+
+    /* One list, one state. The fill/soft split existed only so the cursor
+       could go black over red plates; fills are ink now and red reads on
+       every surface, so there is nothing left to distinguish. */
+    var HOT = 'a, button, input, textarea, select, label, .flip, .car-view, .car-dot';
+
+    var mx = -200, my = -200, rx = -200, ry = -200, raf = null, on = false;
+    /* A tap makes the browser synthesise mousemove/mousedown/mouseup a moment
+       later, and two taps in different places are indistinguishable from a
+       moving mouse. touchstart fires BEFORE those synthetics, so simply
+       standing down on touch is not enough — the synthetic move turns the
+       cursor straight back on. Any mouse activity inside this window after a
+       touch is therefore ignored. It is a window rather than a permanent
+       switch so that a hybrid machine — touchscreen plus trackpad — gets the
+       cursor back the moment the trackpad is genuinely used. */
+    var lastTouch = 0, TOUCH_LOCKOUT = 1000;
+
+    function loop() {
+      rx += (mx - rx) * LERP;
+      ry += (my - ry) * LERP;
+      ring.style.transform = 'translate3d(' + rx + 'px,' + ry + 'px,0)';
+      raf = (Math.abs(mx - rx) > 0.25 || Math.abs(my - ry) > 0.25)
+        ? requestAnimationFrame(loop) : null;
+    }
+
+    window.addEventListener('mousemove', function (e) {
+      if (Date.now() - lastTouch < TOUCH_LOCKOUT) return;
+      if (!on) {
+        /* A tap on a touchscreen emits one synthetic mousemove. A real
+           mouse emits a stream, so wait for movement before committing. */
+        if (mx === -200) { mx = e.clientX; my = e.clientY; rx = mx; ry = my; return; }
+        if (e.clientX === mx && e.clientY === my) return;
+        on = true;
+        document.body.classList.add('has-cursor');
+      }
+      mx = e.clientX; my = e.clientY;
+      dot.style.transform = 'translate3d(' + mx + 'px,' + my + 'px,0)';
+
+      var t = e.target;
+      document.body.classList.toggle('cur-on', !!(t && t.closest && t.closest(HOT)));
+
+      if (!raf) raf = requestAnimationFrame(loop);
+    }, { passive: true });
+
+    window.addEventListener('mousedown', function () { document.body.classList.add('cur-down'); });
+    window.addEventListener('mouseup', function () { document.body.classList.remove('cur-down'); });
+    document.addEventListener('mouseleave', function () { document.body.classList.add('cur-out'); });
+    document.addEventListener('mouseenter', function () { document.body.classList.remove('cur-out'); });
+
+    function standDown() {
+      lastTouch = Date.now();
+      on = false; mx = -200; my = -200;
+      document.body.classList.remove('has-cursor', 'cur-on', 'cur-down');
+    }
+    window.addEventListener('touchstart', standDown, { passive: true });
+    window.addEventListener('touchmove', standDown, { passive: true });
+    window.addEventListener('touchend', standDown, { passive: true });
+  } catch (e) {
+    document.body.classList.remove('has-cursor');
+  }
+})();
+</script>
+</body>
+</html>
